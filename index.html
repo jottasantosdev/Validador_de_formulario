@@ -15,18 +15,18 @@
         <div class="rightside">
             <h1>Crie uma conta grátis</h1>
 
-            <form method="POST">
+            <form method="POST" action="cadastro.php" class="Jsvalidador">
                 <label>
                     Seu nome: <br>
-                    <input type="text" name="name">
+                    <input type="text" name="name" data-rules="required|min=2">
                 </label>
                 <label>
                     Seu e-mail: <br>
-                    <input type="email" name="email">
+                    <input type="email" name="email" data-rules="required|email">
                 </label>
                 <label>
                     Sua senha: <br>
-                    <input type="password" name="password">
+                    <input type="password" name="password" data-rules="required|min=6">
                 </label>
                 <label>
                     <input type="submit" value="Cadrastre-se">
